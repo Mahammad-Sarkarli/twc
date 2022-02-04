@@ -34,10 +34,8 @@ const RoundedButton = ({ positioned, color }) => {
         src={color === "#17171766" ? blackArrow : whiteArrow}
         alt='rounded button inside arrow right icon'
         className={`opacity-0 ${animation2}`}
-      className="rounded relative"
-      style={{ top: positioned }}
-    >
- 
+        style={{ top: positioned }}
+      />
     </button>
   );
 };

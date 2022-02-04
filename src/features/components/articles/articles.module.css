@@ -4,181 +4,264 @@
  */
 
 .header_text {
-  font-size: 11px;
-  line-height: 20px;
-  letter-spacing: 3.85px;
-  text-transform: uppercase;
-  color: #8b8b8b;
-  font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 3.85px;
+    text-transform: uppercase;
+    color: #8b8b8b;
+    font-weight: 400;
 }
 
-/* !============ Articel Header Image ============! */
+.cotent_container img {
+    margin-bottom: 42px;
+}
 
 .container {
-  margin-top: 119px;
-  margin-bottom: 58px;
+    margin: 0px auto;
+    width: 1113px;
+    padding-top: 120px;
 }
 
-.coverImg {
-  height: 503px;
-  width: 813px;
-  margin-right: 50px;
+.content_container {
+    width: 813px;
+    margin-right: 50px;
 }
 
-.box {
-  background-image: url(./assets/img/article-header.png);
-  height: 434px;
-  position: relative;
+.aside_container {
+    width: 300px;
 }
 
-.boxImg {
-  width: 238px;
-  height: 131px;
+.cover_image {
+    width: 813px;
+    margin-right: 50px;
+    height: 502px;
 }
 
-.boxTitle {
-  font-size: 20px;
-  line-height: 24px;
-  color: #878787;
-  margin-bottom: 16px;
+.article_paragraph {
+    margin-bottom: 22px;
 }
 
-.articleName {
-  color: #171717;
+.article_paragraph>p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #878787;
+    margin-bottom: 20px;
 }
 
-.boxParagraph {
-  padding: 38px;
-  font-size: 15px;
-  line-height: 26px;
-  color: #878787;
+.article_title {
+    font-size: 53px;
+    line-height: 61px;
+    color: #171717;
+    margin-bottom: 26px;
 }
 
-.boxIcons {
-  position: absolute;
-  left: 38px;
-  bottom: 40.19px;
+.article_features_desc {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #171717;
+    margin-bottom: 42px;
 }
+
+.aside_box {
+    background-image: url(./assets/img/article-header.png);
+    height: 434px;
+    position: relative;
+    margin-bottom: 339px;
+}
+
+.aside_box_img {
+    width: 100%;
+    height: 131px;
+    margin-bottom: 43px;
+}
+
+.aside_box_title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #878787;
+    margin: 0px 16px 38px 38px;
+}
+
+.aside_article_name {
+    color: #171717;
+}
+
+.aside_box_desc {
+    font-size: 15px;
+    line-height: 26px;
+    color: #878787;
+    width: 162px;
+    margin: 0px 38px;
+}
+
+.aside_box_icons {
+    position: absolute;
+    left: 38px;
+    bottom: 40.19px;
+}
+
+.aside_latest_articles {}
+
+.aside_latest_articles_title {
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #171717;
+}
+
+.aside_latest_articles_box {
+    margin-bottom: 55px;
+}
+
+.aside_latest_articles_img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+.aside_latest_articles_info_box {}
+
+.aside_latest_articles_date {
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 3.85px;
+    text-transform: uppercase;
+    color: #878787;
+}
+
+.aside_latest_articles_desc {
+    font-size: 16px;
+    line-height: 25px;
+    color: #171717;
+}
+
+.aside_search {
+    margin-bottom: 10px;
+    margin-top: 102px;
+}
+
+.aside_search_input {}
+
+.aside_search_input {
+    outline: none;
+    border-bottom: 1px solid #bebebd;
+    padding-bottom: 5.28px;
+    width: 237.5px;
+}
+
+.aside_search_input::placeholder {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(135, 135, 135, 0.5);
+}
+
+
 /* !============ Articel Aside ============! */
 
 .proposalArticles {
-  width: 251px;
-  /* position: absolute; */
+    width: 251px;
+    /* position: absolute; */
 }
+
 .asideBoxImg {
-  width: 64px;
-  height: 64px;
-  margin-right: 20px;
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
 }
 
 .asideArticle {
-  margin-bottom: 51px;
-}
-.asideDate {
-  font-size: 11px;
-  line-height: 20px;
-  letter-spacing: 3.85px;
-  text-transform: uppercase;
-  color: #878787;
-}
-.asideSearchBox {
-  margin-bottom: 10px;
-  margin-top: 102px;
-}
-.asideBoxTitle {
-  font-size: 20px;
-  color: #171717;
-  line-height: 24px;
-  margin-bottom: 26px;
-}
-.asideDesc {
-  font-size: 16px;
-  line-height: 25px;
-  color: #171717;
-}
-.asideSearchInput {
-  outline: none;
-  border-bottom: 1px solid #bebebd;
-  padding-bottom: 5.28px;
-  width: 237.5px;
+    margin-bottom: 51px;
 }
 
-.asideSearchInput::placeholder {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-  color: rgba(135, 135, 135, 0.5);
+.asideDate {
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 3.85px;
+    text-transform: uppercase;
+    color: #878787;
 }
+
+.asideSearchBox {}
+
+.asideBoxTitle {
+    font-size: 20px;
+    color: #171717;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.asideDesc {
+    font-size: 16px;
+    line-height: 25px;
+    color: #171717;
+}
+
 
 /* !============ Articel Footer ============! */
 
-.authorInfo {
-  width: 100%;
-  margin-bottom: 47px;
-  font-size: 16px;
-  line-height: 23px;
-  color: #171717;
+.article_info {
+    width: 100%;
+    margin-bottom: 47px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #171717;
 }
 
-.finishedDate {
-}
-.authorName {
+.label_title {
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #171717;
+    margin-right: 9px;
 }
 
-.etikettLabel {
-  font-size: 15px;
-  line-height: 19px;
-  text-transform: capitalize;
-  color: #171717;
-  margin-right: 9px;
+.label_box {
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 3.85px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #cac5bf;
+    margin-right: 6px;
+    padding: 4px 10px;
 }
-.etiketts {
+
+.share_section_title {
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: #171717;
 }
-.etikettButtonGroup {
-}
-.etikettButton {
-  font-size: 11px;
-  line-height: 20px;
-  letter-spacing: 3.85px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: #cac5bf;
-  margin-right: 6px;
-  padding: 4px 10px;
-}
-.sharingSide {
-}
-.sharingSideLabel {
-  font-size: 15px;
-  line-height: 25px;
-  text-transform: capitalize;
-  color: #171717;
-}
+
 
 /* !============ Articel Comment Form ============! */
+
 .commentFormGroup input {
-  background: #f5f5f3;
+    background: #f5f5f3;
 }
 
 .commentInput {
-  width: 813px;
-  height: 234px;
+    width: 813px;
+    height: 234px;
 }
 
-.personalInput > input {
-  padding: 13px auto 13px 15px !important;
-  width: 400px !important;
-  height: 50px;
-  margin-top: 13px;
+.personalInput>input {
+    padding: 13px auto 13px 15px !important;
+    width: 400px !important;
+    height: 50px;
+    margin-top: 13px;
 }
+
 .nameInput {
-  margin-right: 12px;
+    margin-right: 12px;
 }
 
-.emailInput {
-}
+.emailInput {}
 
-.checkBox {
-}
-.submitButton {
-}
+.checkBox {}
+
+.submitButton {}
+
+.submitButton {}

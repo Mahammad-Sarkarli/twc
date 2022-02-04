@@ -7,8 +7,69 @@ import sectionImagePng from "./assets/img/istehsalat-section.png";
 const IndustryManufacture = () => {
   return (
     <div>
-      <IndustryHeaderDash headerText={'SƏNAYE/İSTEHSALAT'} isHeader={true} />
-          
+      <IndustryHeaderDash headerText={"SƏNAYE/İSTEHSALAT"} isHeader={true} />
+
+      <div className={`${styles.container}`}>
+        <section className={`${styles.header_image_container} d-flex `}>
+          <img src={headerImagePng} alt='' />
+        </section>
+        <section className={`d-flex direction-column`}>
+          <span className={`${styles.header_subtitle}`}>Sənaye</span>
+          <span className={`${styles.header_title}`}>Enerji</span>
+        </section>
+        <section className={`${styles.paragraph_section}`}>
+          <p>
+            Məhsulların əksəriyyəti ‘Sənaye İnqilabın’dan əvvəl insan əməyi və
+            ənənəvi alətlər sayəsində istehsal olunurdu. ‘Sənaye İnqilabı’
+            kütləvi istehsala və daha az xərcli malların istehsalı üçün
+            mexanikləşmədən istifadə edilməsinə gətirib çıxardı. Bura filiz və
+            ağac kimi xammaldan metal məmulatlar və mebel kimi hazır məhsulların
+            emal olunması daxildir. Nəticədə, İstehsalat iqtisadiyyatın ayrılmaz
+            və böyük bir hissəsinə çevirilib.
+          </p>
+          <p>
+            {" "}
+            Xammalın daha faydalı bir şeyə çevrilməsi İstehsalat Sənayesində
+            əlavə dəyər yaradır. Bu əlavə dəyər hazır məhsulların qiymətini
+            artırır və istehsalı biznes zəncirinin çox gəlirli hissəsinə
+            çevirir. Bəzi şəxslər malların istehsalı üçün tələb olunan
+            bacarıqlar üzrə ixtisaslaşır, digərləri isə müəssisələrə alətlər və
+            materiallar almaq üçün lazım olan vəsaiti təmin edir.{" "}
+          </p>
+
+          <p>
+            İstehsal layihələrini həyata keçirən komandalar bugünkü qiymət və
+            təhlükəsizlik baxımından müasir mühitdə bir sıra problemlərlə
+            üzləşirlər. Bəzi çətinliklər bir çox istehsal əməliyyatlarının
+            uğurunun açarı olan iki element, sınaq və keyfiyyətə nəzarət ilə
+            bağlıdır. Bu fəaliyyətlərin müddətinin müəyyən edilməsi planlaşdırma
+            mərhələsində çox vacibdir.
+          </p>
+          <p>
+            Müqayisə məlumatları bu çətin problemlərin həllində faydalı ola
+            bilsə də, təşkilatın məqsəd və təcrübələrinin sənaye normalarına nə
+            qədər uyğun olduğunu müəyyən etmək hələ də komandanı istiqamət
+            axtarmağa vadar edən problem ola bilər. Təşkilatın istehsal
+            layihələrini uğurla başa çatdırmaq üçün bacarıqları yoxdursa,
+            səmərəliliyin artırılması və dəyərin artırılması son nəticədə
+            qeyri-mümkün ola bilər.
+          </p>
+          <p>
+            İstehsal cədvəllərinə hər hansı dəyişiklik edildikdə, təşkilat bir
+            sıra yüksək səviyyəli risklərlə üzləşir. İstehsal layihəsi
+            planlaşdırdığı yolundan çıxarsa, gəlir proqnozları aşağı düşə bilər.
+            Etibarlı keyfiyyət idarəetməsi metodologiyaları tətbiq olunmasa, son
+            məhsul və ya onun komponentləri maya dəyəri, istehsal imkanları və
+            ya müştərilərin cəlb edilməsi baxımından qeyri-sabit ola bilər.
+            Yenidənqurma səyləri istehsal həcmlərini müvəqqəti olaraq azalda
+            bilər və gecikmələr gəlir və ya bazar payının gözlənilməz itkilərinə
+            səbəb ola bilər.
+          </p>
+        </section>
+        <section className={`${styles.section_image_container} d-flex`}>
+          <img src={sectionImagePng} alt='' />
+        </section>
+
         <section className={`${styles.paragraph_section}`}>
           <p>
             Bununla belə, bir çox regional və ya qlobal istehsalçılar istehsalat
@@ -38,10 +99,8 @@ const IndustryManufacture = () => {
           </p>
         </section>
       </div>
- 
-
-  )
-}
-
+    </div>
+  );
+};
 
 export default IndustryManufacture;
