@@ -7,6 +7,8 @@ import sectionImagePng from "./assets/img/retail-section.png";
 import groupItemImagePng1 from "./assets/img/retail-group-item-1.png";
 import groupItemImagePng2 from "./assets/img/retail-group-item-2.png";
 import groupItemImagePng3 from "./assets/img/retail-group-item-3.png";
+import footerImage from "./assets/img/retail-footer.png";
+import RoundedButton from "../../toolbox/buttons/RoundedButton";
 
 const IndustryRetail = () => {
   return (
@@ -86,6 +88,29 @@ const IndustryRetail = () => {
           </p>
         </section>
       </div>
+
+      <footer className={`${styles.retail_footer}`}>
+        <div className={`${styles.retail_footer_container} d-flex`}>
+          <img
+            className={`${styles.retail_footer_image}`}
+            src={footerImage}
+            alt=''
+          />
+          <div className={`d-flex direction-column`}>
+            <p className={`${styles.retail_footer_title}`}>
+              Böyüyən qlobal industriya satışları istehlak dalğası üzərində
+              deyil
+            </p>
+            <p className={`${styles.retail_footer_desc}`}>
+              Alkoqollu içkilər senayesinin yeni dövründə bir şey dəqiqdir:
+              premiumizasiya bazar mənzərəsini həmişəlik dəyişəcək. Sürətli
+              dəyişən istehlakçı davranışları rəqabət balansına təsir göstərdiyi
+              üçün zəif oyunçular mövqelərini qorumaqda əziyyət çəkir.
+            </p>
+            <RoundedButton positioned='15px' color='#17171766' />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
