@@ -20,19 +20,17 @@ const RoundedButton = ({ positioned }) => {
     <button
       className="rounded relative"
       style={{ top: positioned }}
-      onMouseEnter={enableAnimation}
-      onMouseLeave={disableAnimation}
     >
       <img
         src={icon}
         alt="rounded button inside arrow right icon"
-        className={`opacity-1 ${animation1}`}
+        className='opacity-1 animated-css-able-1'
       />
 
       <img
         src={icon}
         alt="rounded button inside arrow right icon"
-        className={`opacity-0 ${animation2}`}
+        className='opacity-0 animated-css-able-2'
       />
     </button>
   )

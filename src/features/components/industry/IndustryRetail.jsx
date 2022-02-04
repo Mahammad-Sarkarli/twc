@@ -8,7 +8,7 @@ const IndustryRetail = () => {
     <div>
       <IndustryHeaderDash headerText={"SƏNAYE/RETAIL"} isHeader={true} />
               <section className={`${styles.header_image_container} d-flex justify-center`}>
-          <img src={headerImagePng} alt="" />
+        <img src={headerImagePng} className="header-img-industry" alt="asjdhasidjlas"  />
       </section>  
     </div>
   )

@@ -46,7 +46,7 @@ const Navigation = ({
         >
           {link.name}
           <span className={`${styles.padding_right_icon}`}>
-            <GoTriangleRight className={`${styles.vertical_middle}`} />
+            <GoTriangleRight className={`${styles.vertical_middle} `} />
           </span>
           {link.hasSubmenu && (
             <div className="absolute">
@@ -57,7 +57,7 @@ const Navigation = ({
                   background: 'transparent',
                 }}
               />
-              <ul className="hoverable animate__animated animate__fadeIn animate__faster">
+              <ul className="hoverable animate__animated animate__fadeIn">
                 {link.subMenus.map((menu) => {
                   return (
                     <li className={`${styles.link_height}`} key={menu.name}>

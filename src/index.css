@@ -330,8 +330,8 @@ button {
   left: -8px;
   animation-name: arrow-animation-1;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-duration: 0.7s;
   animation-delay: 0ms;
 }
 
@@ -342,8 +342,8 @@ button {
   opacity: 0;
   animation-name: arrow-animation-2;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-duration: 0.7s;
   animation-delay: 0ms;
 }
 
@@ -399,4 +399,10 @@ button {
     opacity: 1;
     left: -8px;
   }
+}
+
+
+
+.header-img-industry {
+  width: calc(100% - 340px)!important;
 }
