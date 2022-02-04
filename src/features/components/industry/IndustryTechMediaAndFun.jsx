@@ -38,7 +38,7 @@ const IndustryTechMediaAndFun = () => {
           className={`${styles.services_section} d-flex direction-column align-center`}
         >
           <p className={`${styles.header_subtitle}`}>Sənaye</p>
-          <p className={`${styles.services_title}`}>
+          <p className={`${styles.tmf_services_title}`}>
             Texnologiya, media və əyləncə konsaltinq xidmətlərimiz
           </p>
           <section className={`${styles.service_image_group} d-flex`}>
