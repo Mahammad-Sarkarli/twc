@@ -1,0 +1,21 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+.header_text {
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 3.85px;
+  text-transform: uppercase;
+  color: #8b8b8b;
+  font-weight: 400;
+}
+
+
+
+.header_image_container {
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 120px;
+  padding-bottom: 58px;
+}
