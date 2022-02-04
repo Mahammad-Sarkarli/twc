@@ -1,10 +1,11 @@
 import React from 'react'
 import AboutHeaderDash from './AboutHeaderDash'
+import testimonialsPng from './assets/img/testimonials.png'
 
 const AboutTestimonials = () => {
   return (
     <div>
-      <AboutHeaderDash />
+      <AboutHeaderDash img={testimonialsPng} />
     </div>
   )
 }

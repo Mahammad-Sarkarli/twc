@@ -2,9 +2,3 @@
  *   Copyright (c) 2022 
  *   All rights reserved.
  */
-.background_image {
-  background-image: url(./assets/img/aboutheader.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}

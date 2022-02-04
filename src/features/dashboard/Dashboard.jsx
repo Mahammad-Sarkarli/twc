@@ -4,10 +4,12 @@ import HomeDashboard from './../components/home/HomeDashboard'
 import Footer from '../footer/Footer'
 import CareerDashboard from './../components/career/CareerDashboard'
 import ContactDashboard from './../components/contact/ContactDashboard'
+// !ABOUT US SECTION
 import About from './../components/about/About'
 import AboutOurTeam from './../components/about/AboutOurTeam'
 import AboutTestimonials from './../components/about/AboutTestimonials'
 import AboutPartneers from '../components/about/AboutPartneers'
+// !SERVICES SECTION
 import ServicesSalesAndMarketing from './../components/services/ServicesSalesAndMarketing'
 import ServicesOrganization from './../components/services/ServicesOrganization'
 import ServicesFinanceAndPayment from './../components/services/ServicesFinanceAndPayment'
@@ -15,6 +17,7 @@ import ServicesInvestment from './../components/services/ServicesInvestment'
 import ServicesDoingBusinessInAzerbaijan from './../components/services/ServicesDoingBusinessInAzerbaijan'
 import ServicesBusinessPlan from './../components/services/ServicesBusinessPlan'
 import ServicesMarketResearch from './../components/services/ServicesMarketResearch'
+// !INDUSTRY SECTION
 import IndustryImmovableProperty from './../components/industry/IndustryImmovableProperty'
 import IndustryFinancialService from './../components/industry/IndustryFinancialService'
 import IndustryRetail from './../components/industry/IndustryRetail'
@@ -27,12 +30,13 @@ import IndustryArchitect from './../components/industry/IndustryArchitect'
 import IndustryManufacture from './../components/industry/IndustryManufacture'
 import IndustryEducation from './../components/industry/IndustryEducation'
 import IndustryEnergy from './../components/industry/IndustryEnergy'
+// !ARTICLES SECTION
 import Articles from '../components/articles/Articles'
 import ArticlesStartup from '../components/articles/ArticlesStartup'
 import ArticlesAlcohol from '../components/articles/ArticlesAlcohol'
 import ArticlesLogistics from '../components/articles/ArticlesLogistics'
 import ArticlesFinance from '../components/articles/ArticlesFinance'
-import IndustryEcommerce from './../components/industry/IndustryEcommerce';
+import IndustryEcommerce from './../components/industry/IndustryEcommerce'
 
 const Dashboard = () => {
   return (

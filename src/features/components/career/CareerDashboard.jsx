@@ -8,7 +8,6 @@ const CareerDashboard = () => {
     <div>
       <CareerHeaderDash />
       <Career />
-      <Footer />
     </div>
   )
 }
