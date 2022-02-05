@@ -2,11 +2,11 @@
 import React from 'react'
 import styles from './home.module.css'
 import { useSelector } from 'react-redux'
-import { selectAllServices } from './homeSlice'
+// import { selectAllServices } from './homeSlice'
 
 const Home = () => {
-  const allServices = useSelector(selectAllServices)
 
+  // const allServices = useSelector(selectAllServices)
   return (
     <main className={`${styles.main_padding}`}>
       <div className={`${styles.services}`}>

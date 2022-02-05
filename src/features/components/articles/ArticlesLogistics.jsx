@@ -3,15 +3,22 @@ import styles from "./articles.module.css";
 import ArticleHeaderDash from "./ArticleHeaderDash";
 import coverImgPng from "./assets/img/cargo-cover.png";
 import graphicImgPng from "./assets/img/cargo-competition.png";
-import articleImgPng1 from "./assets/img/startup.png";
-import articleImgPng2 from "./assets/img/alcohol.png";
-import articleImgPng3 from "./assets/img/finance.png";
+import whiteArrow from "../../toolbox/buttons/svg/arrow-white.svg";
+import { SiInstagram } from "react-icons/si";
+import { ImLinkedin2, ImFacebook } from "react-icons/im";
+import { AiOutlineSearch } from "react-icons/ai";
+import articleImgPng1 from "./assets/img/startup-small.png";
+import articleImgPng2 from "./assets/img/alcohol-small.png";
+import articleImgPng3 from "./assets/img/finance-small.png";
 import relatedArticleImgPng from "./assets/img/ntflx.png";
 
 const ArticlesLogistics = () => {
   return (
     <div>
-      <ArticleHeaderDash headerText='' isArticle={true} />
+      <ArticleHeaderDash
+        headerText='Məqalələr/Logİstİka/Komandamızın apardığı İlkİn araşdırmalara görə, Azərbaycanda hava...'
+        isArticle={true}
+      />
 
       <section className={`${styles.container} d-flex`}>
         <section
@@ -82,13 +89,56 @@ const ArticlesLogistics = () => {
                 <div className={`${styles.label_box}`}>management</div>
                 <div className={`${styles.label_box}`}>Consulting</div>
               </div>
-              <div className={`${styles.share_section}`}>
+              <div className={`${styles.share_section} d-flex align-center`}>
                 <p className={`${styles.share_section_title}`}>Paylaş:</p>
-                {/* Icons */}
+                <ImLinkedin2
+                  className={`${styles.social_media_icon} nav-icon-margin-right`}
+                />
+                <ImFacebook
+                  className={` ${styles.social_media_icon} nav-icon-margin-right`}
+                />
+                <SiInstagram className={`${styles.social_media_icon}`} />
               </div>
             </div>
           </section>
-          <section className={`${styles.comment_form}`}></section>
+          <section className={`${styles.comment_section}`}>
+            <p className={`${styles.comment_amount}`}>0 Rəy</p>
+            <p className={`${styles.comment_form_title}`}>
+              Məqaləyə ilk rəy bildirən siz olun
+            </p>
+            <section className={`${styles.comment_group_form}`}>
+              <input
+                type='text'
+                placeholder='Rəy*'
+                className={`${styles.input_for_comment}`}
+              />
+              <div className={`${styles.personal_info_input}`}>
+                <input
+                  type='text'
+                  placeholder='Ad və Soyad*'
+                  className={`${styles.input_for_name}`}
+                />
+                <input
+                  type='text'
+                  placeholder='Email*'
+                  className={`${styles.input_for_email}`}
+                />
+              </div>
+              <div
+                className={`${styles.input_checbox_section} d-flex align-center`}
+              >
+                <input className={`${styles.input_checbox} `} type='checkbox' />
+                <p className={`${styles.input_checbox_label} `}>
+                  Növbəti dəfə şərh yazmaq üçün adımı və e-poçtumu bu brauzerdə
+                  yadda saxlayın.
+                </p>
+              </div>
+              <button className={`${styles.form_submit_button}`}>
+                Paylaş
+                <img src={whiteArrow} alt='' />
+              </button>
+            </section>
+          </section>
         </section>
         <section className={`${styles.aside_container}`}>
           <div className={`${styles.aside_box} d-flex direction-column `}>
@@ -104,7 +154,16 @@ const ArticlesLogistics = () => {
             <p className={`${styles.aside_box_desc}`}>
               Netflix biznes modelini necə dəyişdi
             </p>
-            <div className={`${styles.aside_box_icons}`}>icons</div>
+            <div className={`${styles.aside_box_icons}`}>
+              {" "}
+              <ImLinkedin2
+                className={`${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <ImFacebook
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <SiInstagram className={`${styles.social_media_icon}`} />
+            </div>
           </div>
           <div className={`${styles.aside_latest_articles}`}>
             <p className={`${styles.aside_latest_articles_title}`}>
@@ -164,8 +223,11 @@ const ArticlesLogistics = () => {
             <div className={`${styles.aside_search}`}>
               <input
                 className={`${styles.aside_search_input}`}
-                placeholder='Axtar'
+                placeholder={`Axtar`}
                 type='text'
+              />
+              <AiOutlineSearch
+                className={`${styles.aside_search_input_icon}`}
               />
             </div>
           </div>
