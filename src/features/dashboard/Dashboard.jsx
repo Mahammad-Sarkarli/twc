@@ -47,6 +47,11 @@ const Dashboard = () => {
         <Route path="/" element={<HomeDashboard />} />
         <Route path="/contact" element={<ContactDashboard />} />
         <Route path="/career" element={<CareerDashboard />} />
+
+
+
+
+        {/* !FIKIRLER */}
         <Route path="/ideas" element={<Articles />} />
         <Route path="/ideas/startup" element={<ArticlesStartup />} />
         <Route path="/ideas/alcohol" element={<ArticlesAlcohol />} />
