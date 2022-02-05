@@ -10,12 +10,93 @@ import saleMarketingLogo from "./assets/img/about-us/sales-marketing.png";
 import RoundedButton from "../../toolbox/buttons/RoundedButton";
 import sectionImage from "./assets/img/team/section.png";
 import blackArrow from "../../toolbox/buttons/svg/arrow-black.svg";
+import teamMem1 from "./assets/img/team/member-1.png";
+import teamMem2 from "./assets/img/team/member-2.png";
+import teamMem3 from "./assets/img/team/member-3.png";
+import {
+  FaInstagramSquare,
+  FaFacebookSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 const AboutOurTeam = () => {
   return (
     <div>
       <AboutHeaderDash img={teamJpg} />
 
-      {/* COPY PASTE FROM HOME 3 GUYSSS */}
+      <div
+        className={`${styles.our_team} d-flex direction-column justify-center align-center`}
+      >
+        <p  className={`${styles.our_team_sub_title}`}>Professİonal komandamız</p>
+        <h2>
+          Ən son layihədə iştirak <br /> edən komanda üzvlərimiz{" "}
+        </h2>
+        <div className={`${styles.circle_options} d-flex justify-between`}>
+          <div className={`${styles.circle} ${styles.activ_circle}`}></div>
+          <div className={`${styles.circle} `}></div>
+          <div className={`${styles.circle} `}></div>
+        </div>
+        <div className={`${styles.team_card_container} d-flex justify-between`}>
+          <div className={`${styles.team_card}`}>
+            <img src={teamMem1} alt='image not found' />
+            <h3>Aynur Nizamova</h3>
+            <p>
+              Biznes Konsultant <br /> Təhsil: Azərbaycan Dövlət İqtisad
+              Universiteti, Dünya İqtisadiyyatı
+            </p>
+            <div className={`${styles.icon_container}`}>
+              <FaInstagramSquare
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <FaLinkedin
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <FaFacebookSquare
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+            </div>
+          </div>
+
+          <div className={`${styles.team_card}`}>
+            <img src={teamMem2} alt='image not found' />
+            <h3>Çingiz Novruzzadə</h3>
+            <p>
+              Təsisçi və Direktor <br /> Təhsil: İUBH International Management
+              və Univeristy of East Anglia Investment and Financial Management{" "}
+            </p>
+            <div className={`${styles.icon_container}`}>
+              <FaInstagramSquare
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <FaLinkedin
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <FaFacebookSquare
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+            </div>
+          </div>
+
+          <div className={`${styles.team_card}`}>
+            <img src={teamMem3} alt='image not found' />
+            <h3>Ramazan Əliquliyev</h3>
+            <p>
+              Satış və Marketinq <br /> Təhsil: Saint Petersburg, Polytechnic
+              University, Digital Marketing and E-Commerce.
+            </p>
+            <div className={`${styles.icon_container}`}>
+              <FaInstagramSquare
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <FaLinkedin
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+              <FaFacebookSquare
+                className={` ${styles.social_media_icon} nav-icon-margin-right`}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className={`${styles.container}`}>
         <section className={`${styles.topic_section} d-flex`}>

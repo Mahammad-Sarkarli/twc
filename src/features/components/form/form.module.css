@@ -1,0 +1,107 @@
+.form_side {
+    width: 50%;
+    padding: 56px;
+    background-image: url(./assets/img/form.png);
+    height: 100vh;
+}
+
+.form_logo {
+    margin-bottom: 132px;
+}
+
+.form_title {
+    font-size: 52px;
+    line-height: 61px;
+    color: #171717;
+    margin-bottom: 61px;
+}
+
+.input_label {
+    font-size: 14px;
+    line-height: 26px;
+    color: #878787;
+    margin-bottom: 5px;
+}
+
+.form_input>input {
+    outline: none;
+    border: 1px solid #87878780;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 13px;
+    width: 350px !important;
+}
+
+.form_input>input:not(input[placeholder="Şifrə təyin edin"]) {
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    line-height: 26px;
+    color: #87878780 !important;
+}
+
+.image_side {
+    width: 50%;
+}
+
+.password_requirement_text {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #87878780;
+    margin-bottom: 33px;
+}
+
+.form_submit_button {
+    background: #171717;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    padding: 13px 0px;
+    width: 350px;
+}
+
+.form_question {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    width: 350px;
+    color: rgba(135, 135, 135, 0.5);
+}
+
+.form_switch_link {
+    color: #171717;
+}
+
+.image_side {
+    width: 50%;
+    background-image: url(./assets/img/image.png);
+    height: 100vh;
+}
+
+.login_features {
+    width: 380px;
+    margin-top: 5px;
+    margin-bottom: 33px;
+}
+
+.checkbox_label {
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #171717;
+}
+
+.forgetten_password_link {
+    font-size: 15px;
+    line-height: 26px;
+    color: #171717;
+}
