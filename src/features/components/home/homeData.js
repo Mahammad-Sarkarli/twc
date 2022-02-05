@@ -1,3 +1,8 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+
 export const homeData = {
   ids: [
     'id1',

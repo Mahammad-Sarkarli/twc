@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
 export const navigationData = {
   ids: ['id1', 'id2', 'id3', 'id4', 'id5', 'id6'],
   entities: {

@@ -1,22 +1,22 @@
 /*
- *   Copyright (c) 2022
+ *   Copyright (c) 2022 
  *   All rights reserved.
  */
 
 import { createSlice, createEntityAdapter } from '@reduxjs/toolkit'
-import { homeData } from './homeData'
+import { homeData } from './homeData.js'
 
 const homeAdapter = createEntityAdapter({
   selectId: (item) => item.id,
   sortComparer: (preService, nextService) =>
-    preService.id.localeCompare(nextService.id),
+    preService.id.localeCompare(nextService.id)
 })
 
 const initialState = {
   error: null,
   status: 'idle',
   activeService: {},
-  services: homeData,
+  services: {...homeData},
 }
 
 const homeSlice = createSlice(sliceInvoker())
@@ -26,7 +26,7 @@ function sliceInvoker() {
     name: 'home',
     initialState,
     reducers: {},
-    extraReducers: {},
+    extraReducers: {}
   }
 }
 
