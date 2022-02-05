@@ -16,6 +16,7 @@ const Navigation = ({
   bgColor,
   isArticle,
   isHeader,
+  isPrivacy,
 }) => {
   const allLinks = useSelector(selectAllLinks)
   const navigate = useNavigate()
@@ -34,7 +35,6 @@ const Navigation = ({
 
   const disableSlider = () => {
     setHidden('slider-hidden')
-
   }
 
   const renderedLinks = allLinks.map((link) => {
@@ -83,7 +83,7 @@ const Navigation = ({
     <div
       className={`normalize-padding navigation-height d-flex align-center justify-between ${
         styles.navigation_padding_top
-      } ${isArticle || isHeader ? styles.ptAndPb : ''}`}
+      } ${isArticle || isHeader || isPrivacy ? styles.ptAndPb : ''}`}
     >
       <Slider
         handleSliderClick={disableSlider}
