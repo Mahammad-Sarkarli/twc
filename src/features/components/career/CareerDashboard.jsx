@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../../footer/Footer'
 import Career from './Career'
 import CareerHeaderDash from './CareerHeaderDash'
 

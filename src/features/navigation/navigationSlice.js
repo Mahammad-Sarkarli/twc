@@ -2,6 +2,7 @@
  *   Copyright (c) 2022 
  *   All rights reserved.
  */
+
 import { createSlice, createEntityAdapter } from '@reduxjs/toolkit' ; 
 import { navigationData } from './navigationData'
 
