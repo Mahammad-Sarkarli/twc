@@ -35,3 +35,12 @@
     background-image: url(./assets/img/homeheader1.jpg);
   }
 }
+
+.main_padding {
+  padding: 191px 70px 162px;
+}
+
+services_describtion,
+services_list_container {
+  width: 50%;
+}
