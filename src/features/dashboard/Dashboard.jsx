@@ -37,6 +37,8 @@ import ArticlesAlcohol from '../components/articles/ArticlesAlcohol'
 import ArticlesLogistics from '../components/articles/ArticlesLogistics'
 import ArticlesFinance from '../components/articles/ArticlesFinance'
 import IndustryEcommerce from './../components/industry/IndustryEcommerce'
+import Faq from './../components/privacy/Faq';
+import Privacy from './../components/privacy/Privacy';
 
 const Dashboard = () => {
   return (
@@ -111,6 +113,11 @@ const Dashboard = () => {
         <Route path="/industry/education" element={<IndustryEducation />} />
         <Route path="/industry/ecommerce" element={<IndustryEcommerce />} />
         <Route path="/industry/energy" element={<IndustryEnergy />} />
+
+
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/privacy" element={<Privacy />} />
+
       </Routes>
 
       <Footer />
