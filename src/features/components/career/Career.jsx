@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './career.module.css'
 import ceo from './assets/img/carrer-ceo.png'
 import RoundedButton from '../../toolbox/buttons/RoundedButton'
+import arrow from './assets/img/arrow.png'
 
 const Career = () => {
   return (
@@ -57,6 +58,36 @@ const Career = () => {
       <section className={`${styles.vacantion}`}>
         <span className={`${styles.career_span}`}>Karyera</span>
         <h4>Vakansiyalar</h4>
+        {/* !VACATION CONTAINER 1 */}
+        <div className={`${styles.join_vacation}`}>
+          <h2>Associate</h2>
+          <p>
+            <strong>Biz kimik?</strong> <br />
+            Cənub-Şərqi Avropanın ilk erkən mərhələdə olan saf menecement <br />
+            konsaltinq şirkəti olan TWC gənc, dinamik və istedadlı komandası ilə
+            hər <br />
+            çətinliyin üstəsindən gəlməyə hazırdır.
+          </p>
+          <button>
+            <span>Müraciət et</span>
+            <img src={arrow} alt="button icon arrow right" />
+          </button>
+        </div>
+         {/* !VACATION CONTAINER 2 */}
+        <div className={`${styles.join_vacation}`}>
+          <h2>Biznes konsultant</h2>
+          <p>
+            <strong>Biz kimik?</strong> <br />
+            Cənub-Şərqi Avropanın ilk erkən mərhələdə olan saf menecement <br />
+            konsaltinq şirkəti olan TWC gənc, dinamik və istedadlı komandası ilə
+            hər <br />
+            çətinliyin üstəsindən gəlməyə hazırdır.
+          </p>
+          <button>
+            <span>Müraciət et</span>
+            <img src={arrow} alt="button icon arrow right" />
+          </button>
+        </div>
       </section>
     </div>
   )

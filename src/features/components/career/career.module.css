@@ -59,6 +59,7 @@ strong {
 
 section._ready {
   margin-bottom: 161px;
+  width: 100%;
 }
 
 .content_img,
@@ -79,6 +80,7 @@ section._ready {
   background: url(./assets/img/career_join.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .career_span {
@@ -119,4 +121,62 @@ section.vacantion > h4 {
   line-height: 52px;
   text-align: center;
   color: #171717;
+  margin-bottom: 116px;
+}
+
+.join_vacation {
+  width: 1026px;
+  height: 253px;
+  border: 1px solid rgba(43, 43, 43, 0.25);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
+  position: relative;
+  padding: 38px 55px;
+}
+
+.join_vacation > button {
+  position: absolute;
+  right: 55px;
+  top: 93px;
+  width: 156px;
+  height: 67px;
+  background-color: #171717;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join_vacation > h2 {
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  /* identical to box height, or 146% */
+  color: #171717;
+}
+
+.join_vacation > p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #878787;
+}
+
+.join_vacation strong {
+  color: #171717;
+}
+
+.join_vacation:last-child {
+  margin-top: 20px;
+}
+
+.join_vacation > button > img {
+  margin-left: 5.5px;
 }
