@@ -73,7 +73,7 @@ const Career = () => {
             <img src={arrow} alt="button icon arrow right" />
           </button>
         </div>
-         {/* !VACATION CONTAINER 2 */}
+        {/* !VACATION CONTAINER 2 */}
         <div className={`${styles.join_vacation}`}>
           <h2>Biznes konsultant</h2>
           <p>

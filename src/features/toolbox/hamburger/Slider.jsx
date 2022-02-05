@@ -10,7 +10,6 @@ import RoundedButton from './../buttons/RoundedButton'
 const Slider = ({ classData, handleSliderClick, conditionView }) => {
   const contactData = useSelector((state) => selectFooterLinkById(state, 'id4'))
 
-  console.log(contactData)
 
   return (
     <div
