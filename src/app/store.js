@@ -5,10 +5,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import navigationReducer from './../features/navigation/navigationSlice'
 import footerReducer from './../features/footer/footerSlice'
+import homeReducer from './../features/components/home/homeSlice'
 
 export const store = configureStore({
   reducer: {
     navigation: navigationReducer,
     footer: footerReducer,
+    home: homeReducer,
   },
 })
