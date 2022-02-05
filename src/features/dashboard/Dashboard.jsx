@@ -39,6 +39,8 @@ import ArticlesFinance from '../components/articles/ArticlesFinance'
 import IndustryEcommerce from './../components/industry/IndustryEcommerce'
 import Faq from './../components/privacy/Faq';
 import Privacy from './../components/privacy/Privacy';
+import SignUp from './../components/form/SignUp';
+import SignIn from './../components/form/SignIn';
 
 const Dashboard = () => {
   return (
@@ -122,6 +124,9 @@ const Dashboard = () => {
 
         <Route path="/faq" element={<Faq />} />
         <Route path="/privacy" element={<Privacy />} />
+
+        <Route  path="/register" element={< SignIn />}/>
+        <Route  path="/login" element={< SignUp />}/>
 
       </Routes>
 
