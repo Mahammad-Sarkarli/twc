@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { selectAllServices } from './homeSlice'
 
 const Home = () => {
-  const allServices = useSelector(selectAllServices)
+  // const allServices = useSelector(selectAllServices)
 
   return (
     <main className={`${styles.main_padding}`}>
