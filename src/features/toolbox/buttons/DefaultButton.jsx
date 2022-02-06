@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DefaultButton = ({ classData, contentData }) => {
+const DefaultButton = ({ classData, contentData, handleNavigation }) => {
   return (
     <div>
-      <button className={classData}>{contentData}</button>
+      <button onClick={handleNavigation} className={classData}>{contentData}</button>
     </div>
   )
 }

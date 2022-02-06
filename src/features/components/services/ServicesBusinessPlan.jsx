@@ -1,14 +1,14 @@
-import React from "react";
-import ServicesHeaderDash from "./ServicesHeaderDash";
-import styles from "./services.module.css";
-import headerImage from "./assets/img/biznesplanvetie/header.png";
-import sectionImage from "./assets/img/biznesplanvetie/section.png";
-import topicImage1 from "./assets/img/biznesplanvetie/topic-1.png";
-import topicImage2 from "./assets/img/biznesplanvetie/topic-2.png";
-import topicImage3 from "./assets/img/biznesplanvetie/topic-3.png";
-import topicImage4 from "./assets/img/biznesplanvetie/topic-4.png";
-import topicImage5 from "./assets/img/biznesplanvetie/topic-5.png";
-import topicImage6 from "./assets/img/biznesplanvetie/topic-6.png";
+import React from 'react'
+import ServicesHeaderDash from './ServicesHeaderDash'
+import styles from './services.module.css'
+import headerImage from './assets/img/biznesplanvetie/header.png'
+import sectionImage from './assets/img/biznesplanvetie/section.png'
+import topicImage1 from './assets/img/biznesplanvetie/topic-1.png'
+import topicImage2 from './assets/img/biznesplanvetie/topic-2.png'
+import topicImage3 from './assets/img/biznesplanvetie/topic-3.png'
+import topicImage4 from './assets/img/biznesplanvetie/topic-4.png'
+import topicImage5 from './assets/img/biznesplanvetie/topic-5.png'
+import topicImage6 from './assets/img/biznesplanvetie/topic-6.png'
 const ServicesBusinessPlan = () => {
   return (
     <div>
@@ -45,7 +45,7 @@ const ServicesBusinessPlan = () => {
             <img
               className={`${styles.section_image}`}
               src={sectionImage}
-              alt=''
+              alt=""
             />
             <div className={`${styles.section_image_desc}`}>
               <p>
@@ -80,7 +80,7 @@ const ServicesBusinessPlan = () => {
                 <img
                   className={`${styles.image_item}`}
                   src={topicImage1}
-                  alt=''
+                  alt=""
                 />
                 <span className={`${styles.image_subtitle}`}>
                   Biznes modeli
@@ -90,7 +90,7 @@ const ServicesBusinessPlan = () => {
                 <img
                   className={`${styles.image_item}`}
                   src={topicImage2}
-                  alt=''
+                  alt=""
                 />
                 <span className={`${styles.image_subtitle}`}>Bazar həcmi</span>
               </div>
@@ -98,7 +98,7 @@ const ServicesBusinessPlan = () => {
                 <img
                   className={`${styles.image_item}`}
                   src={topicImage3}
-                  alt=''
+                  alt=""
                 />
                 <span className={`${styles.image_subtitle}`}>
                   Marketinq planı
@@ -108,7 +108,7 @@ const ServicesBusinessPlan = () => {
                 <img
                   className={`${styles.image_item}`}
                   src={topicImage4}
-                  alt=''
+                  alt=""
                 />
                 <span className={`${styles.image_subtitle}`}>
                   Maliyyə planı
@@ -118,7 +118,7 @@ const ServicesBusinessPlan = () => {
                 <img
                   className={`${styles.image_item}`}
                   src={topicImage5}
-                  alt=''
+                  alt=""
                 />
                 <span className={`${styles.image_subtitle}`}>
                   Riskin qiymətləndirilməsi
@@ -128,7 +128,7 @@ const ServicesBusinessPlan = () => {
                 <img
                   className={`${styles.image_item}`}
                   src={topicImage6}
-                  alt=''
+                  alt=""
                 />
                 <span className={`${styles.image_subtitle}`}>Texniki plan</span>
               </div>
@@ -137,7 +137,7 @@ const ServicesBusinessPlan = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ServicesBusinessPlan;
+export default ServicesBusinessPlan

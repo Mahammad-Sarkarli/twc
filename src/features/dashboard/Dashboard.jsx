@@ -125,8 +125,8 @@ const Dashboard = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/privacy" element={<Privacy />} />
 
-        <Route  path="/register" element={< SignIn />}/>
-        <Route  path="/login" element={< SignUp />}/>
+        <Route  path="/login" element={< SignIn />}/>
+        <Route  path="/register" element={< SignUp />}/>
 
       </Routes>
 

@@ -1,34 +1,70 @@
-import React from "react";
-import styles from "./form.module.css";
-import imageLogo from "./assets/img/logo.png";
-import blackThinkWiseLogo from "./../common/assets/svg/navigation-black-logo.svg";
+import React, { useState } from 'react'
+import styles from './form.module.css'
+import imageLogo from './assets/img/logo.png'
+import blackThinkWiseLogo from './../common/assets/svg/navigation-black-logo.svg'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [checked, setChecked] = useState(false)
+  const isDisable = [email, password].every(Boolean) ; 
+
+
+  const handleSubmit = () => {
+    
+  }
+
   return (
-    <div className='d-flex'>
+    <div className="d-flex">
       <section className={`${styles.form_side}`}>
         <div className={`${styles.form_logo}`}>
-          <img src={blackThinkWiseLogo} alt='' />
+          <Link to="/">
+            <img src={blackThinkWiseLogo} alt="" />
+          </Link>
         </div>
         <div className={`${styles.form_group}`}>
           <p className={`${styles.form_title}`}>TWC-yə xoş gəlmisiniz!</p>
           <form
-            action=''
+            action=""
+            onSubmit={handleSubmit}
             className={`${styles.form_input} d-flex direction-column`}
           >
-            <label className={`${styles.input_label}`} htmlFor=''>
+            <label className={`${styles.input_label}`} htmlFor="email">
               Email*
             </label>
-            <input type='text' placeholder='Email ünvanınızı daxil edin' />
+            {/* !INPUT EMAIL VERIFICATION */}
+            <input
+              type="email"
+              placeholder="Email ünvanınızı daxil edin"
+              required
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-            <label className={`${styles.input_label}`} htmlFor=''>
+            <label className={`${styles.input_label}`} htmlFor="password">
               Şifrə*
             </label>
-            <input type='text' placeholder='Şifrə təyin edin' />
+            {/* !INPUT PASSWORD VERIFICATION */}
+            <input
+              type="password"
+              placeholder="Şifrə təyin edin"
+              required
+              name="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
             <div className={`${styles.login_features} d-flex justify-between`}>
               <div className={`${styles.checkbox_input} d-flex align-center`}>
-                <input type='checkbox' />
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={(e) => setChecked(e.target.checked)}
+                />
                 <p className={`${styles.checkbox_label}`}>Məni xatırla</p>
               </div>
               <p className={`${styles.forgetten_password_link}`}>
@@ -36,21 +72,27 @@ const SignUp = () => {
               </p>
             </div>
 
-            <button className={`${styles.form_submit_button}`}>Daxil ol</button>
+            <button
+              disabled={!isDisable}
+              className={`${styles.form_submit_button}`}
+            >
+              Daxil ol
+            </button>
             <div className={`${styles.form_question}`}>
-              Hesabınız yoxdur? 
-              <span className={`${styles.form_switch_link}`}>
+              Hesabınız yoxdur?
+              <Link to="/register" className={`${styles.form_switch_link}`}>
+                {' '}
                 &nbsp; Qeydiyyatdan keç
-              </span>
+              </Link>
             </div>
           </form>
         </div>
       </section>
       <section className={`${styles.image_side} d-flex justify-center`}>
-        <img src={imageLogo} alt='' />
+        <img src={imageLogo} alt="" />
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default SignUp;
+export default SignUp

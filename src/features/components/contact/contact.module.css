@@ -110,8 +110,8 @@ form > h2 {
   margin-top: 35px;
 }
 
-form > input[type='text'],
-form > input[type='email'] {
+.form  input[type='text'],
+.form  input[type='email'] {
   width: 499px;
   height: 26px;
   background: #ffffff;

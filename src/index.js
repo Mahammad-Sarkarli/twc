@@ -1,5 +1,5 @@
 /*
- *   Copyright (c) 2022 
+ *   Copyright (c) 2022
  *   All rights reserved.
  */
 
@@ -11,17 +11,15 @@ import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { store } from './app/store'
 import { BrowserRouter } from 'react-router-dom'
-import 'animate.css';
+import 'animate.css'
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   rootElement,
 )
 

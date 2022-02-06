@@ -6,6 +6,7 @@ import { selectFooterLinkById } from './../../footer/footerSlice'
 import icon from './assets/img/menu-x-icon.svg'
 import sliderTwc from './../../components/common/assets/svg/navigation-slider.svg'
 import RoundedButton from './../buttons/RoundedButton'
+import { Link } from 'react-router-dom';
 
 const Slider = ({ classData, handleSliderClick, conditionView }) => {
   const contactData = useSelector((state) => selectFooterLinkById(state, 'id4'))
@@ -16,6 +17,7 @@ const Slider = ({ classData, handleSliderClick, conditionView }) => {
       className={`slider ${conditionView ? conditionView : classData}`}
       style={{ overflowY: 'hidden', position: 'fixed!important', top: '0' }}
     >
+
       <img
         src={icon}
         alt="slider-menu icon"
@@ -43,7 +45,7 @@ const Slider = ({ classData, handleSliderClick, conditionView }) => {
         inkişaf etdirməyə imkan verir.
       </p>
 
-      <RoundedButton />
+      <Link to="/about"><RoundedButton /></Link>
 
       <div
         className="absolute"

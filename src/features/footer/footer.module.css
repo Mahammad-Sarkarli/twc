@@ -63,7 +63,7 @@
   padding-right: 125px;
 }
 
-input[type='email'] {
+.width_footer_links > input[type='email'] {
   align-self: flex-end;
   border:none;
   display: inline-block;
