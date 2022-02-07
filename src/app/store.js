@@ -1,3 +1,7 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
 
 import { configureStore } from '@reduxjs/toolkit'
 import navigationReducer from './../features/navigation/navigationSlice'

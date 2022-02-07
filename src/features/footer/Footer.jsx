@@ -45,9 +45,15 @@ const Footer = () => {
             Uğura gedən <br />
             yolda TWC ilə
           </h2>
-          <input type="email" name="email" id="email" placeholder="Email" className="absolute" style={{right:"125px",}} />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            className="absolute"
+            style={{ right: '125px' }}
+          />
           <RoundedButton positioned="40px" />
-        
         </div>
 
         <div

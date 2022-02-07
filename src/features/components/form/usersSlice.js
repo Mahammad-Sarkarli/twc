@@ -6,8 +6,12 @@ const initialState = {
   checked: false,
   currentUser: {},
   users: {
-    ids: [],
-    entities: {},
+    ids: ['id1'],
+    entities: {
+      id1:{
+       
+      }
+    },
   },
 }
 

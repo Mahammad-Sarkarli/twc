@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './form.module.css'
 import imageLogo from './assets/img/logo.png'
 import blackThinkWiseLogo from './../common/assets/svg/navigation-black-logo.svg'
@@ -8,16 +8,17 @@ const SignUp = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [checked, setChecked] = useState(false)
-  const isDisable = [email, password].every(Boolean) ; 
+  const isDisable = [email, password].every(Boolean)
 
 
   const handleSubmit = () => {
-    
+ 
   }
 
+
   return (
-    <div className="d-flex">
-      <section className={`${styles.form_side}`}>
+    <div>
+      <section  className={`${styles.form_side}`}>
         <div className={`${styles.form_logo}`}>
           <Link to="/">
             <img src={blackThinkWiseLogo} alt="" />
@@ -41,6 +42,7 @@ const SignUp = () => {
               id="email"
               name="email"
               value={email}
+              pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}"
               onChange={(e) => setEmail(e.target.value)}
             />
 
@@ -50,7 +52,7 @@ const SignUp = () => {
             {/* !INPUT PASSWORD VERIFICATION */}
             <input
               type="password"
-              placeholder="Şifrə təyin edin"
+              placeholder="Şifrənizi daxil edin"
               required
               name="password"
               id="password"

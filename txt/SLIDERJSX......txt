@@ -1,0 +1,7 @@
+props
+
+
+
+{
+  <a className='slider_renderedLinks'>{renderedLinks}</a>
+}
