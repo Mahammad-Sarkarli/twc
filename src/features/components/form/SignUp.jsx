@@ -13,19 +13,6 @@ const SignUp = () => {
 
   const canSubmit = [fullName,email,password,number].every(Boolean) ; 
 
-  const validateEmail= (email) => {
-    const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regex.test(String(email).toLowerCase());
-}
-
-  const handleEmail = (paramsEmail) => {
-      if(!validateEmail(email)) {
-          setError('please set valid email!')
-      }else {
-        setEmail(paramsEmail)
-      }
-  }
-
 
 
 
@@ -65,8 +52,8 @@ const SignUp = () => {
               name="email"
               id="email"
               value={email}
-              autoComplete={email}
-              onChange={(e) => handleEmail(e.target.value)}
+              autoComplete={email}              
+              onChange={(e) => setEmail(e.target.value)}
 
             />
             <label className={`${styles.input_label}`} htmlFor="number">

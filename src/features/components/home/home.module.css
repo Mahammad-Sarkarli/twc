@@ -47,7 +47,7 @@
   padding-right: 97px;
 }
 
-.services_describtion > h2 {
+.services_describtion  h2 {
   font-size: 53px;
   font-weight: 400;
   line-height: 61.48px;
@@ -73,8 +73,8 @@
   flex-wrap: wrap;
 }
 
-.services_list_container > div > span {
-  display: block;
+.services_list_container > div  span {
+  display: inline-block;
   padding: 0.5rem;
   margin-right: 1.25rem;
   margin-bottom: 1.25rem;
@@ -255,7 +255,7 @@
   max-width: 50%;
 }
 
-.carier_side2 > p:first-child {
+.carier_side2  p:first-child {
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -264,7 +264,7 @@
   text-align: left;
 }
 
-.carier_side2 > h3 {
+.carier_side2  h3 {
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -273,7 +273,7 @@
   text-align: left;
 }
 
-.carier_side2 > p:nth-child(2) {
+.carier_side2  p:nth-child(2) {
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
@@ -284,7 +284,7 @@
   color: #878787;
 }
 
-.articles_A > p:first-child {
+.articles_A  p:first-child {
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -293,7 +293,7 @@
   text-align: left;
 }
 
-.articles_A > h3 {
+.articles_A  h3 {
   font-size: 42px;
   font-style: normal;
   font-weight: 400;
@@ -302,7 +302,7 @@
   text-align: left;
 }
 
-.articles_A > p:nth-child(2) {
+.articles_A  p:nth-child(2) {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -486,11 +486,11 @@
   .team_card_container {display: flex; flex-direction: column; padding: 0 20px; align-items: center;}
   .doing_business_box {width: 340px; height: 240px;}
   .carier {width: 100%; display: flex; flex-direction: column; align-items: center; padding: 0 ; margin: 40px 0;}
-  .carier > img {width: 100%; object-fit: cover; margin: 0;}
-  .carier_side2 {width: 100%;}
+  .carier > img {width: 350px; object-fit: cover; margin: 0;}
+  .carier_side2 {width: 100%; padding-top: 60px;}
   
   /* articles section */
-  .articles {width: 100%; display: flex; flex-direction: column; align-items: center;}
+  .articles {width: 100%; margin-top: 10px; padding-top: 30px; display: flex; flex-direction: column; align-items: center;}
   .articles_B {display: flex; flex-direction: column; align-items: center;}
   .articles_A p,h3 {padding: 10px 0; }
 
@@ -501,5 +501,22 @@
   .projects_container > span {display: inline-block; margin: 20px 0; display: flex; justify-content: center;}
   
 
+
+  .services_list_container > div  span {
+    margin-right: 10px!important;
+    margin-bottom: 10px!important;
+  }
+  
+
+  .articles_card1 {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+
+  .text_sec {
+    margin-top: 60px;
+  }
   
 }
+

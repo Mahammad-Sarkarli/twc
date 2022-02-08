@@ -4,6 +4,7 @@ import styles from './career.module.css'
 import ceo from './assets/img/carrer-ceo.png'
 import RoundedButton from '../../toolbox/buttons/RoundedButton'
 import arrow from './assets/img/arrow.png'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Career = () => {
   return (
@@ -51,7 +52,10 @@ const Career = () => {
               TWC-yə qoşulmağa <br />
               hazırsan?
             </h4>
-            <RoundedButton positioned="" color="#000" />
+            <AnimationOnScroll animateIn='animate__rubberBand'>
+                  <RoundedButton positioned="" color="#000" />
+            </AnimationOnScroll>
+            
           </div>
         </div>
       </section>
@@ -68,13 +72,18 @@ const Career = () => {
             hər <br />
             çətinliyin üstəsindən gəlməyə hazırdır.
           </p>
-          <button>
-            <span>Müraciət et</span>
-            <img src={arrow} alt="button icon arrow right" />
-          </button>
+         
+              <button>
+                <AnimationOnScroll animateIn='animate__rubberBand'>
+                  <span>Müraciət et</span>
+                  <img src={arrow} alt="button icon arrow right" />
+                </AnimationOnScroll>
+              </button>
+      
+          
         </div>
         {/* !VACATION CONTAINER 2 */}
-        <div className={`${styles.join_vacation}`}>
+        <div className={`${styles.join_vacation} animated_controller`}>
           <h2>Biznes konsultant</h2>
           <p>
             <strong>Biz kimik?</strong> <br />
@@ -83,10 +92,14 @@ const Career = () => {
             hər <br />
             çətinliyin üstəsindən gəlməyə hazırdır.
           </p>
-          <button>
-            <span>Müraciət et</span>
-            <img src={arrow} alt="button icon arrow right" />
-          </button>
+          
+            <button>
+                <AnimationOnScroll animateIn='animate__rubberBand'>
+                  <span>Müraciət et</span>
+                  <img src={arrow} alt="button icon arrow right" />
+                </AnimationOnScroll>
+            </button>
+      
         </div>
       </section>
     </div>

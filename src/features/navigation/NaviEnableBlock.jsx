@@ -26,12 +26,12 @@ const NaviEnableBlock = ({mr_nv_btn,mr_nv_nv}) => {
   return (
     <div className='d-flex'>
       <DefaultButton
-        classData={`button-detailed button-detailed-transparent ${mr_nv_btn}`}
+        classData={`mobile-display-none button-detailed button-detailed-transparent ${mr_nv_btn}`}
         contentData="Daxil ol"
         handleNavigation={handleSignUp}
       />
       <DefaultButton
-        classData={`button-detailed button-detailed-white ${mr_nv_nv}`}
+        classData={`mobile-display-none button-detailed button-detailed-white ${mr_nv_nv}`}
         contentData="Qeydiyyat"
         handleNavigation={handleSignIn}
       />

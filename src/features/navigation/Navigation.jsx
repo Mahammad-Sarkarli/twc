@@ -29,12 +29,12 @@ const Navigation = ({
   }
 
   const clickHandler = () => {
-    setView('slider-visible')
+    setView('slider-visible slider-mb-visible')
     setHidden('')
   }
 
   const disableSlider = () => {
-    setHidden('slider-hidden')
+    setHidden('slider-hidden slider-mb-hidden ')
   }
 
   const renderedLinks = allLinks.map((link) => {
@@ -81,7 +81,7 @@ const Navigation = ({
 
   return (
     <div
-      className={`normalize-padding navigation-height d-flex align-center justify-between ${
+      className={`mobile-padding normalize-padding navigation-height d-flex align-center justify-between ${
         styles.navigation_padding_top
       } ${isArticle || isHeader || isPrivacy ? styles.ptAndPb : ''}`}
     >
@@ -97,7 +97,7 @@ const Navigation = ({
           className={styles.navigation_logo_margin_right}
           onClick={handleNavigation}
         />
-        <ul className="d-flex">{renderedLinks}</ul>
+        <ul className="mobile-display-none d-flex navigation-container">{renderedLinks}</ul>
       </div>
       <div className="d-flex align-center">
         {enable && (

@@ -11,6 +11,7 @@ import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { store } from './app/store'
 import { BrowserRouter } from 'react-router-dom'
+import "animate.css/animate.min.css";
 import 'animate.css'
 const rootElement = document.getElementById('root')
 

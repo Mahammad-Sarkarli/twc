@@ -3,7 +3,7 @@ import styles from './header.module.css'
 
 const Header = ({img}) => {
     return (
-        <div className='normalize-padding header-height'>
+        <div className='mobile-padding normalize-padding header-height'>
             
         </div>
     )

@@ -117,12 +117,15 @@ section.vacantion > h4 {
   position: relative;
   padding: 38px 55px
 }
-.join_vacation > button {
-  position: absolute;
-  right: 55px;
-  top: 93px;
-  width: 156px;
-  height: 67px;
+
+
+
+.join_vacation  button {
+  position: absolute!important;
+  right: 55px!important;
+  top: 93px!important;
+  width: 156px!important;
+  height: 67px!important;
   background-color: #171717;
   color: #fff;
   font-size: 14px;

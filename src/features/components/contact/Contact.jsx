@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import styles from './contact.module.css'
 import arrow from './assets/img/arrow.png'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 const Contact = () => {
   const [fullName, setFullName] = useState('')
@@ -18,19 +20,19 @@ const Contact = () => {
       <section className={`${styles.map_numbers}`}>
         <div className={`${styles.map}`}></div>
         <div className={`${styles.number}`}>
-          <div>
+        <AnimationOnScroll animateIn='animate__zoomInDown'>
+            <div>
             <span>ƏLAQƏ</span>
             <h2>
               Bizimlə əlaqə saxlayın <br />
               və ya ofisimizə yaxınlaşın
             </h2>
-
             <div className={`${styles.contact_informations}`}>
               <div>
                 <a href="mailto:info@thinkwise.az">info@thinkwise.az</a> <br />
                 <a href="tel:+994 50 447 10 90">+994 50 447 10 90</a> <br />
                 <a href="tel:+994 50 447 10 90">+994 50 447 10 90</a>
-              </div>
+             </div>
 
               <p>
                 Nobel prospekti 15, <br /> Azure Biznes Mərkəzi <br />
@@ -38,17 +40,22 @@ const Contact = () => {
               </p>
             </div>
           </div>
+        </AnimationOnScroll>
         </div>
       </section>
       <section className={`${styles.pic_form}`}>
         <div className={`${styles.pic}`}></div>
         <div className={`${styles.form}`}>
           <form onSubmit={handleSubmit}>
-            <span>ƏLAQƏ</span>
+              <AnimationOnScroll animateIn='animate__zoomInDown'>
+
+                 <span>ƏLAQƏ</span>
             <h2>
               Müraciətinizi burada <br />
               qeyd edə bilərsiniz
             </h2>
+              </AnimationOnScroll>
+           
             <input
               type="text"
               name="name"

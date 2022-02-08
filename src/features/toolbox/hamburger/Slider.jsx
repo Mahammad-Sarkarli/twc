@@ -1,7 +1,8 @@
 // @ts-nocheck
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './hamburger.module.css'
 import { useSelector } from 'react-redux'
+import { selectAllLinks } from './../../navigation/navigationSlice'
 import { selectFooterLinkById } from './../../footer/footerSlice'
 import icon from './assets/img/menu-x-icon.svg'
 import sliderTwc from './../../components/common/assets/svg/navigation-slider.svg'
@@ -10,11 +11,37 @@ import { Link } from 'react-router-dom';
 
 const Slider = ({ classData, handleSliderClick, conditionView }) => {
   const contactData = useSelector((state) => selectFooterLinkById(state, 'id4'))
+  const allLinks = useSelector(selectAllLinks) ; 
+
+
+
+
+  const renderedLinks = allLinks.map(link => {
+    return (
+      <li  className="mb-list-item relative"  key={link.id}>
+          <Link className='mb-link-none' to={`${link.link}`}>{link.name}</Link>
+        {
+          link.hasSubmenu && 
+
+
+           <ul className='mb-none animate__animated animate__fadeInLeft'>
+            {
+              link.subMenus.map(item => {
+                return (
+                 <Link className='mb-link-none' to={`${item.link}`}>{<li className='animate__animated animate__zoomInLeft animate__slower'>{item.name}</li>}</Link>
+                )
+              })
+            }
+          </ul>
+        }
+        </li>
+    )
+  })
 
 
   return (
     <div
-      className={`slider ${conditionView ? conditionView : classData}`}
+      className={`slider slider-mb  ${conditionView ? conditionView : classData}`}
       style={{ overflowY: 'hidden', position: 'fixed!important', top: '0' }}
     >
 
@@ -36,16 +63,24 @@ const Slider = ({ classData, handleSliderClick, conditionView }) => {
         }}
       />
 
-      <p className={`text-upper text-white ${styles.slider_paragraph}`}>
+      <ul className="text-white mt-mb-2 display_none display-mb-flex flex-mb-column">
+        {
+          renderedLinks
+        }
+      </ul>
+
+      <p className={`mobile-display-none text-upper text-white ${styles.slider_paragraph}`}>
         BİZNESİNİZİ TWC İLƏ YÜKSƏLDİN
       </p>
-      <h2 className={`${styles.header_text}`}>Think Wise Consulting</h2>
-      <p className={`${styles.twc_difference}`}>
+      <h2 className={`mobile-display-none ${styles.header_text}`}>Think Wise Consulting</h2>
+      <p className={`mobile-display-none ${styles.twc_difference}`}>
         Peşəkar komandamızla TWC sizə uğurlu biznesinizi qurmağa <br /> və
         inkişaf etdirməyə imkan verir.
       </p>
 
-      <Link to="/about"><RoundedButton /></Link>
+        <div className='mb-slide-button'>
+           <Link to="/about"><RoundedButton /></Link>
+        </div>
 
       <div
         className="absolute"
@@ -56,7 +91,7 @@ const Slider = ({ classData, handleSliderClick, conditionView }) => {
         <h2 className={`${styles.list_item_slider_header}`}>
           {contactData.header}
         </h2>
-        <ul>
+        <ul className='mb-slider-footer-text'>
           {contactData.headerItems.map((item, index) => {
             return (
               <li className={`${styles.list_item_slider}`} key={index}>
