@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import HomeDashboard from './../components/home/HomeDashboard'
-import Footer from '../footer/Footer'
 import CareerDashboard from './../components/career/CareerDashboard'
 import ContactDashboard from './../components/contact/ContactDashboard'
 // !ABOUT US SECTION
@@ -130,7 +129,7 @@ const Dashboard = () => {
 
       </Routes>
 
-      <Footer />
+
     </div>
   )
 }

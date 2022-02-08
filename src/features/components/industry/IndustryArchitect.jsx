@@ -4,6 +4,7 @@ import styles from "./industry.module.css";
 import IndustryHeaderDash from "./IndustryHeaderDash";
 import headerImagePng from "./assets/img/tikinti-header.png";
 import sectionImagePng from "./assets/img/tikinti-section.png";
+import Footer from './../../footer/Footer'
 const IndustryArchitect = () => {
   return (
     <div>
@@ -79,6 +80,7 @@ const IndustryArchitect = () => {
           </p>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

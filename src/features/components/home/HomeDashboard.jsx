@@ -7,6 +7,7 @@ const HomeDashboard = () => {
     <div>
       <HomeHeaderDash />
       <Home />
+      <Footer />
     </div>
   )
 }

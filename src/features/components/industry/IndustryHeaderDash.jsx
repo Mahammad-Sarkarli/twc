@@ -18,7 +18,7 @@ const IndustryHeaderDash = ({ headerText, isHeader }) => {
         isHeader={isHeader}
       />
       <IndustryHeader text={headerText} />
-
+      
     </div>
   )
 }

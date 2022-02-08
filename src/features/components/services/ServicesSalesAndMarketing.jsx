@@ -8,6 +8,8 @@ import topicImage3 from './assets/img/satisvemarketing/topic-3.png';
 import topicImage4 from './assets/img/satisvemarketing/topic-4.png';
 import topicImage5 from './assets/img/satisvemarketing/topic-5.png';
 import topicImage6 from './assets/img/satisvemarketing/topic-6.png';
+import Footer from './../../footer/Footer';
+
 
 const ServicesSalesAndMarketing = () => {
     return (
@@ -45,9 +47,7 @@ const ServicesSalesAndMarketing = () => {
                     </div>
                 </section>
 
-                <section
-                    className={`${styles.topic_section}  d-flex`}
-                >
+                <section className={`${styles.topic_section}  d-flex`}>
                     <div className={`${styles.image_section}`}>
                         <img
                             className={`${styles.topic_image} d-flex`}
@@ -273,6 +273,7 @@ const ServicesSalesAndMarketing = () => {
                     </div>
                 </section>
             </div>
+            <Footer />
         </div>
     );
 };
