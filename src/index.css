@@ -475,12 +475,13 @@ button {
 
 .mb-none {
     height: 0px;
-    transition: .5s ease;
     overflow-y: hidden;
     -webkit-transition: .5s ease;
     -moz-transition: .5s ease;
     -ms-transition: .5s ease;
     -o-transition: .5s ease;
+    transition: .5s ease;
+    
 }
 
 .mb-list-item:hover > .mb-none {
