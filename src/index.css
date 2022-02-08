@@ -461,11 +461,12 @@ button {
     width: 100%;
     background-color: rgba(255, 255,255,.2);
     margin-bottom: 3px;
-    border-radius: 4px;
+
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+      border-radius: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
@@ -537,6 +538,11 @@ button {
 
 .w-mb-100 {
     width: 100%;
+}
+
+
+.mb-align-start {
+    align-items: flex-start;
 }
 
 .mb-self-end {
