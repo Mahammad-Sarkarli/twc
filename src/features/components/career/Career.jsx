@@ -61,9 +61,8 @@ const Career = () => {
                             TWC-yə qoşulmağa <br />
                             hazırsan?
                         </h4>
-                        <AnimationOnScroll animateIn="animate__rubberBand">
-                            <RoundedButton positioned="" color="#000" />
-                        </AnimationOnScroll>
+
+                        <RoundedButton positioned="" color="#000" />
                     </div>
                 </div>
             </section>
@@ -83,7 +82,7 @@ const Career = () => {
                     </p>
 
                     <button>
-                        <AnimationOnScroll animateIn="animate__rubberBand">
+                        <AnimationOnScroll animateIn="animate__fadeInLeftBig animate__slow">
                             <span>Müraciət et</span>
                             <img src={arrow} alt="button icon arrow right" />
                         </AnimationOnScroll>
@@ -102,7 +101,7 @@ const Career = () => {
                     </p>
 
                     <button>
-                        <AnimationOnScroll animateIn="animate__rubberBand">
+                        <AnimationOnScroll animateIn="animate__fadeInLeftBig animate__slow">
                             <span>Müraciət et</span>
                             <img src={arrow} alt="button icon arrow right" />
                         </AnimationOnScroll>

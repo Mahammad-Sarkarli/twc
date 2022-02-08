@@ -326,7 +326,7 @@ button {
     animation-name: arrow-animation-1;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    animation-duration: 0.7s;
+    animation-duration: 1.2s;
     animation-delay: 0s;
 }
 
@@ -338,7 +338,7 @@ button {
     animation-name: arrow-animation-2;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    animation-duration: 0.7s;
+    animation-duration: 1.2s;
     animation-delay: 0s;
 }
 
