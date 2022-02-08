@@ -105,7 +105,7 @@ section.vacantion > h4 {
   margin-bottom: 116px
 }
 .join_vacation {
-  width: 1026px;
+  max-width: 1026px;
   height: 253px;
   border: 1px solid rgba(43,43,43,.25);
   margin-left: auto;
@@ -155,4 +155,44 @@ section.vacantion > h4 {
 }
 .join_vacation > button > img {
   margin-left: 5.5px
+}
+
+
+@media screen and (max-width: 767px) { 
+
+.bg_container { 
+  height: 200px;
+}
+
+.career_main {
+    padding:170px 20px;
+}
+
+.bg_container h3,
+.bg_container h4 {
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+.content_img,
+.content_text {
+  width: 100%;
+}
+
+
+
+.join_vacation  {
+  padding: 20px 15px;
+}
+
+
+.join_vacation > p {
+  font-size: 14px;
+  width: 64%;
+}
+
+.join_vacation > h2 {
+  margin-bottom: 15px;
+}
+
 }

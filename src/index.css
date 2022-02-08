@@ -414,6 +414,11 @@ button {
       display: none;
   }  
 
+
+  .sm-mb-4-padding {
+      padding: 6px;
+  }
+
   .mobile-padding {
       padding-left: 10px;
       padding-right: 10px;
@@ -448,6 +453,7 @@ button {
     width: 300px;
     padding: 50px 20px 55px 20px;
     right: -300px;
+    overflow-x: hidden;
 }
 
 .mb-list-item {
@@ -511,6 +517,11 @@ button {
     top: 20px;
 }
 
+
+.mb-w-25 {
+    width: 25%;
+}
+
 .size-font-mb-h2 {
     font-size: 18px;
 }
@@ -522,6 +533,20 @@ button {
 .size-font-mb-span {
    margin-right: 14px;
 }
+
+
+.w-mb-100 {
+    width: 100%;
+}
+
+.mb-self-end {
+    align-self: flex-end;
+}
+
+.mb-self-center {
+    align-self: center;
+}
+
 
 }
 

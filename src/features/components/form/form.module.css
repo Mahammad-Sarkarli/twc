@@ -5,7 +5,7 @@
 .form_side {
   width: 50%;
   padding: 56px;
-  /* background-image: url(./assets/img/form.png); */
+  background-image: url(./assets/img/form.png);
   height: 100vh;
 }
 
@@ -91,12 +91,12 @@ input::placeholder {
 
 .image_side {
   width: 50%;
-  /* background-image: url(./assets/img/image.png); */
+  background-image: url(./assets/img/image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
-  background-color: #292b2c;
+
 }
 
 .login_features {

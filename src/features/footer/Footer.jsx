@@ -10,9 +10,9 @@ const Footer = () => {
 
   const renderedMenu = allFooterData.map((item) => {
     return (
-      <div>
+      <div className='mt-mb-2 sm-mb-4-padding'>
         {
-          <div key={item.id}>
+          <div key={item.id} className=''>
             <p
               className={`${styles.margin_bottom_paragraph} ${styles.list_item_header}`}
             >
@@ -36,7 +36,7 @@ const Footer = () => {
   })
 
   return (
-    <div className={styles.footer_height}>
+    <div className={`${styles.footer_height} display-mb-flex flex-mb-column`}>
       <div className={styles.upper_content}>
         <div
           className={`d-flex justify-between ${styles.width_footer_links} relative`}
@@ -45,15 +45,18 @@ const Footer = () => {
             Uğura gedən <br />
             yolda TWC ilə
           </h2>
+            <div className='mb-self-end'>
+             <RoundedButton positioned="40px" />
+          </div>
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email"
-            className="absolute"
-            style={{ right: '125px' }}
+            className={`absolute ${styles.footer_input}`}
+
           />
-          <RoundedButton positioned="40px" />
+      
         </div>
 
         <div

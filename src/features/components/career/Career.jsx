@@ -43,7 +43,7 @@ const Career = () => {
         </div>
       </div>
 
-      <section className={`${styles._ready} d-flex`}>
+      <section className={`${styles._ready} d-flex flex-mb-column`}>
         <div className={`${styles.content_img}`}></div>
         <div className={`${styles.content_text}`}>
           <div>
