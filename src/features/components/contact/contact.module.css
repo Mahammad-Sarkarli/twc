@@ -12,6 +12,7 @@
 
 .map_numbers {
   display: flex;
+  flex-direction: row;
   margin-top: 165px;
 }
 
@@ -142,3 +143,54 @@ form > input[type='email'],
 form > textarea {
   margin-top: 10px;
 }
+
+
+@media screen and (max-width: 767px) {
+    .pic_form,
+		.map_numbers {
+      flex-direction: column;
+    }
+
+
+
+    .map_numbers > div { 
+      width: 100%;
+      height: auto;
+    }
+
+
+
+    .number {
+      padding:20px 10px;
+  
+    }
+
+
+    .number > div {
+      margin-top: 50px;
+
+    }
+
+  .pic,
+  .form {
+    width: 100%;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form  input[type='text'],
+.form  input[type='email'] {
+  padding-left: 0px;
+}
+
+.form  input[type='text'],
+.form  input[type='email'] ,
+form > textarea {
+ width: 100%;
+}
+
+
+}
+
