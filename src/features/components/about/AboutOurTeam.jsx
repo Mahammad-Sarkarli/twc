@@ -43,7 +43,7 @@ const AboutOurTeam = () => {
                     <div className={`${styles.circle} `}></div>
                 </div>
                 <div
-                    className={`${styles.team_card_container} d-flex justify-between`}
+                    className={`${styles.team_card_container}   flex-mb-column align-center d-flex justify-between`}
                 >
                     <div className={`${styles.team_card}`}>
                         <img src={teamMem1} alt="image not found" />

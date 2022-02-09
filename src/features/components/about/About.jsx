@@ -3,7 +3,6 @@
 import React from 'react';
 import RoundedButton from '../../toolbox/buttons/RoundedButton';
 import styles from './about.module.css';
-
 import marketresearchLogo from './assets/img/about-us/market-research.png';
 import businessPlanLogo from './assets/img/about-us/business-plan.png';
 import capitalismusLogo from './assets/img/about-us/capitallismus.png';
@@ -31,9 +30,7 @@ const About = () => {
                 <span className={`${styles.service_title}`}>
                     Konsaltinq Servislərimiz
                 </span>
-                <div
-                    className={`${styles.circle_options} d-flex justify-between`}
-                >
+                <div className={`${styles.circle_options} d-flex-between`}>
                     <div
                         className={`${styles.circle} ${styles.activ_circle}`}
                     ></div>
@@ -41,7 +38,7 @@ const About = () => {
                     <div className={`${styles.circle} `}></div>
                 </div>
                 <div
-                    className={`${styles.service_logo_group} d-flex justify-between`}
+                    className={`${styles.service_logo_group} d-flex  flex-mb-column justify-mb-center justify-between`}
                 >
                     <div
                         className={`${styles.service_logo_box} d-flex direction-column align-center justify-center `}
@@ -196,7 +193,7 @@ const About = () => {
                     Dəyərlərimiz
                 </span>
                 <div
-                    className={`${styles.circle_options} d-flex justify-between`}
+                    className={`${styles.circle_options} d-flex  justify-between`}
                 >
                     <div
                         className={`${styles.circle} ${styles.activ_circle}`}
@@ -205,7 +202,7 @@ const About = () => {
                     <div className={`${styles.circle} `}></div>
                 </div>
                 <div
-                    className={`${styles.image_item_group} d-flex flex-wrap justify-between`}
+                    className={`${styles.image_item_group} d-flex flex-mb-column mb-align-center flex-wrap justify-between`}
                 >
                     <div className={`${styles.image_item_section}`}>
                         <img

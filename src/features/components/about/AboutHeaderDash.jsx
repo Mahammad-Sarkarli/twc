@@ -1,10 +1,10 @@
 // @ts-nocheck
-import React from 'react'
-import Navigation from '../../navigation/Navigation'
-import NavHeader from '../../toolbox/navheader/NavHeader'
-import Header from './../../header/Header'
-import styles from './about.module.css'
-import whiteThinkWiseLogo from './../common/assets/svg/navigation-white-logo.svg'
+import React from 'react';
+import Navigation from '../../navigation/Navigation';
+import NavHeader from '../../toolbox/navheader/NavHeader';
+import Header from './../../header/Header';
+import styles from './about.module.css';
+import whiteThinkWiseLogo from './../common/assets/svg/navigation-white-logo.svg';
 const AboutHeaderDash = ({ img }) => {
   const backgroundStyle = {
     backgroundImage: `url(${img})`,

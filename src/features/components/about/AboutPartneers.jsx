@@ -12,10 +12,10 @@ const AboutPartneers = () => {
         <div>
             <AboutHeaderDash img={partneersPng} />
             <section
-                className={`${styles.partners_container} d-flex align-center justify-center`}
+                className={`${styles.partners_container} d-flex flex-mb-column align-center justify-center`}
             >
                 <div
-                    className={`${styles.partners_firm_img_box} d-flex align-center justify-center`}
+                    className={`${styles.partners_firm_img_box} d-flex  align-center justify-center`}
                 >
                     <img
                         className={`${styles.partners_firm_img}`}

@@ -15,28 +15,9 @@ import article2 from '../articles/assets/img/alcohol-cover.png';
 import article3 from '../articles/assets/img/cargo-cover.png';
 import article4 from '../articles/assets/img/startup.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { useMediaQuery } from 'react-responsive'
+
 
 const Home = () => {
-
-
-
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 992 })
-  return isDesktop ? children : null
-}
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-  return isTablet ? children : null
-}
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
-  return isMobile ? children : null
-}
-const Default = ({ children }) => {
-  const isNotMobile = useMediaQuery({ minWidth: 768 })
-  return isNotMobile ? children : null
-}
 
 
 
