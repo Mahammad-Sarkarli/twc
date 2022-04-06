@@ -25,10 +25,10 @@ const AboutTestimonials = () => {
                 className={`${styles.customers_container} d-flex direction-column align-center justify-center`}
             >
                 <div
-                    className={`${styles.customers_row} d-flex align-center justify-center`}
+                    className={`${styles.customers_row} d-flex align-center flex-mb-column justify-center`}
                 >
                     <div
-                        className={`${styles.customer_firm_img_box} d-flex align-center justify-center`}
+                        className={`${styles.customer_firm_img_box} d-flex  align-center justify-center`}
                     >
                         <img
                             className={`${styles.customer_firm_img}`}
@@ -65,7 +65,7 @@ const AboutTestimonials = () => {
                     </div>
                 </div>
                 <div
-                    className={`${styles.customers_row}  d-flex align-center justify-center`}
+                    className={`${styles.customers_row}  d-flex flex-mb-column align-center justify-center`}
                 >
                     <div
                         className={`${styles.customer_firm_img_box} d-flex align-center justify-center`}
@@ -105,7 +105,7 @@ const AboutTestimonials = () => {
                     </div>
                 </div>
                 <div
-                    className={`${styles.customers_row}  d-flex align-center justify-center`}
+                    className={`${styles.customers_row}  d-flex flex-mb-column align-center justify-center`}
                 >
                     <div
                         className={`${styles.customer_firm_img_box} d-flex align-center justify-center`}
